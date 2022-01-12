@@ -1,0 +1,541 @@
+---
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: xaringan-themer.css
+---
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_xaringan(
+  text_font_family = "Droid Serif",
+  text_font_url = "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic",
+  header_font_google = google_font("Yanone Kaffeesatz"),
+  link_color = "rgb(38, 158, 249)"
+)
+
+```
+
+
+class: center
+
+background-image: url(https://www.zotero.org/static/images/promote/zotero-logo-384x92.png), url(https://upload.wikimedia.org/wikipedia/fi/thumb/2/21/Helsingin_yliopisto.svg/180px-Helsingin_yliopisto.svg.png)
+background-size: 50%, 15%
+background-position: 50% 40%, 50% 85%
+
+<br>
+
+# Efficient Reference Management
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+### Eemil Mitikka | Theories & Methods | February 2022
+
+<style>
+.moderate {
+font-size: 1.25em;
+}
+</style>
+
+<style>
+.big {
+font-size: 1.5em;
+}
+</style>
+
+<style>
+.emph {
+font-style: italic;
+color: #ed092c;
+}
+</style>
+---
+
+# Outline
+<br>
+.big[
+* Why to Use Reference Management Software?
+
+* Why Zotero?
+
+* Installing Zotero
+
+* Basic Use
+
+* Power-User Tips
+]
+
+---
+
+# Why references matter? &#128218;
+<br>
+
+--
+
+.moderate[
+* Reader knows what is behind your .emph[argumentation]
+]
+--
+.moderate[
+* Gives reader a change to find .emph[more information]
+]
+
+--
+
+.moderate[
+* Indicates your .emph[knowledge] and .emph[expertise] on the subject
+]
+
+--
+
+.moderate[
+* Importance of .emph[consistency]: messy references 
+  
+  - ***confuse*** the reader 
+  - give ***bad impression*** about your professionalism
+  - ***undermine*** your research's credibility
+]
+
+---
+
+# Why reference management software? &#128187;
+
+--
+
+.moderate[
+* Because typing references by hand is, for instance:
+  - ***time-consuming*** &#8987;
+  - ***error-prone*** &#10060;
+  - extremely ***boring*** &#x1F971;
+]
+
+--
+
+#### Also:
+
+--
+
+.moderate[
+* Typing references by hand .emph[takes time from actually demanding things], like theoretical work and analyses
+]
+
+--
+
+.moderate[
+* .emph[Re-usability] and of manually typed references is next to nothing
+]
+
+--
+
+.moderate[
+* Let the computer do what it is good at (**automatized tasks**), so you can concentrate on what .emph[you are good at] (**critical thinking**) 
+]
+
+
+---
+
+layout: false
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Why Zotero?
+
+--
+
+.moderate[
+* .emph[FREE]!
+]
+
+--
+
+.moderate[
+* Open-source
+]
+
+--
+
+.moderate[
+* Fast
+]
+
+--
+
+.moderate[
+* Easy to use
+]
+
+--
+
+.moderate[
+* Makes your research more .emph[re-usable]
+]
+
+--
+
+.moderate[
+* Comprehensive [Citation Style Repository](https://www.zotero.org/styles)
+]
+
+--
+
+.moderate[
+* Visual [Citation Style Editor](https://editor.citationstyles.org/about/)
+]
+
+--
+
+.moderate[
+* [Bibliography Generator](https://zbib.org/)
+]
+
+--
+
+.moderate[
+* [RStudio integration](https://www.rstudio.com/blog/rstudio-1-4-preview-citations/) for R users
+]
+
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+
+# Installing Zotero
+
+.moderate[
+* Personal computer: download from Zotero's [website](https://www.zotero.org/)
+]
+
+.moderate[
+* NB! If you are using ***University of Helsinki's computer*** (i.e. library or work computers) &#10145;&#65039;  install from [Software Center](https://helpdesk.it.helsinki.fi/en/instructions/computer-and-printing/software/software-center)
+]
+
+.moderate[
+* Install also [Zotero Connector](https://www.zotero.org/download/connectors#)!
+]
+
+.moderate[
+* Create an [account in Zotero](https://www.zotero.org/user/register) &#10145;&#65039; enables syncing, group working & file back-up 
+]
+
+
+.moderate[
+* Make sure the [MS Word plugin](https://www.zotero.org/support/word_processor_plugin_installation) is also installed &#10145;&#65039; you should be able to find "*Zotero*" tab in MS Word    
+]
+
+---
+
+# Check list before you start using Zotero &#128221;
+<br>
+.big[
+- &#9989; you have the Zotero **desktop app**
+
+
+- &#9989; you can find **Zotero tab** in MS Word
+
+- &#9989; you have registered **Zotero account**
+
+- &#9989; you have **Zotero Connector** extension in your web browser
+
+]
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/1024px-WWW_logo_by_Robert_Cailliau.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+
+# Basic Use: in Web browser
+
+.moderate[
+* Search Bibliography from the Net
+
+* Good sources: [Google Scholar](https://scholar.google.com/), [WorldCat](https://www.worldcat.org/), [Amazon](https://www.amazon.com/), [Helka](https://helsinki.primo.exlibrisgroup.com/discovery/search?vid=358UOH_INST:VU1&lang=en)...
+
+* For articles *po-russki*: [CyberLeninka](https://cyberleninka.ru/), see also this guide: Russian and Eastern European Studies &#10145;&#65039; [Primary Sources](https://libraryguides.helsinki.fi/russian_and_eastern_european_studies/primary_sources)
+
+* Click "Save to Zotero" on your browser extensions pane to save the reference
+]
+
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1024px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+# Basic Use: in MS Word
+.moderate[
+## Add Citations &#128209;
+* Choose "**Zotero**" tab (next to "Home", "Insert", "Draw", etc.)
+  - &#10145;&#65039; Select "**Add/Edit Citation**"
+  - &#10145;&#65039; Select Citation Style and click "**OK**" (can be changed later at any point)
+	- &#10145;&#65039; Type the desired reference in the red Zotero box and press Enter
+	
+* You can also modify **page numbers**, hide the **author** or **add prefix/suffix** before adding the citation
+]
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1024px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+# Basic Use: in MS Word
+
+## Add Bibliography &#128218;
+
+.modarate[
+* Choose "**Zotero**" tab (next to "Home", "Insert", "Draw", etc.)
+
+* Select "**Add/Edit Bibliography**"  &#10145;&#65039; adds list of references in the end of the document
+
+* **Tip** &#128161; it's good practice to .emph[disable] automatic update of citations: 
+  - &#10145;&#65039; Click "**Document Preferences**" 
+  - &#10145;&#65039; Unselect "**Automatically update citations**" 
+  - &#10145;&#65039; Click "**OK**" 
+  - &#10145;&#65039; You can add citations manually by clicking the "Refresh" button! 
+]
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+## Basic Use: in Zotero
+
+## Edit Citations &#128221;
+.moderate[
+- Edit imported citations: change title, author(s), page numbers, etc..
+
+- Create own citations: 
+  - &#10145;&#65039; Click "**New Item**" 
+  - &#10145;&#65039; Select citation type ("Book", "Book section", etc.)
+
+- You can also **change the order of authors**, mark some of them **as editors**, etc.
+]
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips &#128170; in Zotero
+
+## Transliteration of references
+- &#10145;&#65039; Import desired reference to Zotero
+- &#10145;&#65039; Select imported reference in Zotero 
+- &#10145;&#65039; Right click with your mouse
+- &#10145;&#65039; Choose "**Duplicate Item**" 
+- &#10145;&#65039; Copy and paste reference's non-Latin fields one by one 
+- &#10145;&#65039; Go to transliteration [website](https://www.translitteration.com/transliteration/en/russian/ala-lc/)
+- &#10145;&#65039; Paste cyrillic text to the field
+- &#10145;&#65039; Click "To Latin script"
+- &#10145;&#65039; Copy and paste the transliterated version to your duplicated item in Zotero
+	
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1024px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+# Power-User Tips &#128170; in MS Word 
+
+## Add keyboard shortcuts for Zotero
+- Add keyboard shortcut to .emph[frequently used Zotero commands]
+	- In Windows environment: check instructions from [MS support site](https://support.microsoft.com/en-us/office/customize-keyboard-shortcuts-9a92343e-a781-4d5a-92f1-0f32e3ba5b4d)
+	- In Mac environment:  
+		- &#10145;&#65039; **Tools**
+		- &#10145;&#65039; **Customise Keyboard...**
+		- &#10145;&#65039; From "**Categories**" select "**All Commands**" (might be also under "**Macros**") 
+		- &#10145;&#65039; Search for "**Zotero**" -> 
+		- &#10145;&#65039; Select "**ZoteroInsertCitation**" and assign keyboard shortcut (for example: Command+E) -> 
+		- &#10145;&#65039; Click "**OK**"
+- Other often used commands you may want to add: "**ZoteroAddEditCitation**", "**ZoteroRefresh**".. 
+		
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips 	&#128170; - Citation Styles
+
+## Zotero Style Repository
+
+.moderate[
+* ~15 citation styles installed by default in Zotero
+
+* If you can't find the style you want, check Zotero's [style repository](https://www.zotero.org/styles) &#10145;&#65039; over 8100 readymade styles
+
+#### Downloading styles from style repository
+* Style Search &#10145;&#65039; Click on desired style &#10145;&#65039; "**Add citation style to Zotero**?" &#10145;&#65039; Select "**OK**" &#10145;&#65039; Change style in MS Word from Zotero tab &#10145;&#65039; Select "**Document Preferences**" &#10145;&#65039; Pick the style you want &#10145;&#65039; Click "**OK**"
+
+]
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips 	&#128170; - Citation Styles
+
+### Question: "*What if I can't find a matching style?*"
+
+### Answer: Basically, you have three options:
+.big[
+1. **Edit** existing styles (**recommend*)
+
+2. **Correct manually**
+
+3. **Make your own style**
+]
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips 	&#128170; - Citation Styles
+
+## Finding citation styles
+<br>
+.moderate[
+* Search for existing styles from Zotero's [style repository](https://www.zotero.org/styles) 
+
+* NB! Finding 100% correct citation style for your purposes might be hard
+
+* [Sebastian Karcher](https://www.sebastiankarcher.com/) provides an excellent [webinar presentation](https://www.youtube.com/watch?v=NDnf0o80dwg) on Citation Style Language (CSL) &#10145;&#65039;  also introduces how to search citation styles efficiently from the [CSL editor](https://editor.citationstyles.org/searchByExample/) (**recommend to check it out!*)
+
+]
+
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips 	&#128170; - Citation Styles
+
+## 1. Editing styles
+* Can't find your citation style? Edit existing style!
+
+* Search for existing styles from Zotero's [style repository](https://www.zotero.org/styles) 
+
+* **Generally speaking**: it's better idea to .emph[edit existing styles] &#128073; making style from scratch is: 
+  1. time-consuming &#8987;, and
+  2. probably requires coding knowledge ([XML](https://docs.citationstyles.org/en/stable/specification.html)) - which you may not have &#129299;
+  
+* **In practice**, you can often find very closely matching style, which you need adjust only slightly (for example, author's first name needs to be fully shown instead of short version: "Doe, John" &#9989;, "Doe, J." &#10060;)
+
+* Sebastian Karcher's [webinar presentation]((https://www.youtube.com/watch?v=NDnf0o80dwg) offers a good starting point on editing citation styles 
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1024px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+# Power-User Tips 	&#128170; - Citation Styles
+
+## 2. Correct manually
+
+* In this approach, you simply need to:
+  1. Find a closely matching existing citation style,
+  2. Use this citation style in your writing,
+  3. When you are ready with your text:
+    - &#10145;&#65039; Create a ***new*** empty Word document
+    - &#10145;&#65039; Copy and paste your ready text to this new document
+    - &#10145;&#65039; In your ***new Word document***: Select "**Zotero**" tab &#10145;&#65039; Click "**Unlink Citations**" &#10145;&#65039; Click "**OK**" 
+    
+* The ***new document*** is the your final output to be submitted (e.g. thesis, research article)
+
+* NB! &#9888; Be careful not to unlink citations on your ***original Word document*** with Zotero references! &#10145;&#65039; you can't undo unlinking, and will lose the citations from your original document too
+
+
+---
+
+# Power-User Tips 	&#128170; - Citation Styles
+
+## 3. Make your own citation style
+
+* "*For hardcore users*" -solution, when you can't find a matching citation style
+
+* My honest opinion: **generally speaking**, it's a better idea to .emph[edit existing styles] &#128073; making style from scratch is: 
+  1. time-consuming &#8987;, and
+  2. probably requires coding knowledge ([XML](https://docs.citationstyles.org/en/stable/specification.html)) - which you may not have &#129299;
+
+* On the bright side, in this approach you learn coding skills, which you can later apply on other areas
+
+* Sebastian Karcher's [webinar presentation]((https://www.youtube.com/watch?v=NDnf0o80dwg) offers a good starting point on making your own CSL style
+
+
+---
+
+# Bonus Tip &#128176; Extracting Zotero References
+
+.moderate[
+**Scenario 1**: You lost your Zotero/Mendeley library but still have your documents. Extraction allows you to recover the items you cited in your documents and import them back into your reference manager. Note that imported items won't be linked to the items in the document you extracted them from.
+
+**Scenario 2**: Somebody sent you a document and you would like to get the cited items into your own reference manager library.
+
+
+**Solution**: 
+
+* You may use the [Reference Extractor](https://rintze.zelle.me/ref-extractor/) tool, a free tool for extracting Zotero (and Mendeley) references from MS Word &#10145;&#65039; created by [Rintze M. Zelle](https://rintze.zelle.me/about/) (one of the developers of the Citation Style Language)
+
+]
+
+---
+
+```{r include=FALSE}
+library(fontawesome)
+```
+
+background-image: url(avatar.jpeg)
+background-size: 25%
+background-position: 90% 70%
+
+# Questions? Comments? Feedback?
+
+## Contact/find me at
+
+<br>
+
+`r fa("link")` [https://eemilmitikka.netlify.app/](https://eemilmitikka.netlify.app/)
+`r fa("envelope")` [eemil.mitikka@helsinki.fi](mailto:eemil.mitikka@helsinki.fi)
+`r fa("youtube")` [Eemil Mitikka](https://www.youtube.com/channel/UC6f_SpVTiB7rZS0Knwb6aYg)
+`r fa("linkedin")` [eemil-mitikka](https://www.linkedin.com/in/eemil-mitikka/)
+`r fa("twitter")` [@eemilmitikka](https://twitter.com/eemilmitikka)
+`r fa("github")` [@eemilmitikka](https://github.com/eemilmitikka)
+
+---
+
+class: middle, center
+
+# Thank you!
+
+.large[
+&#128526;
+]
+
+<style>
+.large {
+font-size: 10em;
+}
+</style>
+	

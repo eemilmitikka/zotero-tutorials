@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>zotero_tutorials_xaringan.knit</title>
+    <meta charset="utf-8" />
+    <script src="zotero_tutorials_xaringan_files/header-attrs-2.11/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: center
+
+background-image: url(https://www.zotero.org/static/images/promote/zotero-logo-384x92.png), url(https://upload.wikimedia.org/wikipedia/fi/thumb/2/21/Helsingin_yliopisto.svg/180px-Helsingin_yliopisto.svg.png)
+background-size: 50%, 15%
+background-position: 50% 40%, 50% 85%
+
+&lt;br&gt;
+
+# Efficient Reference Management
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+### Eemil Mitikka | Theories &amp; Methods | February 2022
+
+&lt;style&gt;
+.moderate {
+font-size: 1.25em;
+}
+&lt;/style&gt;
+
+&lt;style&gt;
+.big {
+font-size: 1.5em;
+}
+&lt;/style&gt;
+
+&lt;style&gt;
+.emph {
+font-style: italic;
+color: #ed092c;
+}
+&lt;/style&gt;
+---
+
+# Outline
+&lt;br&gt;
+.big[
+* Why to Use Reference Management Software?
+
+* Why Zotero?
+
+* Installing Zotero
+
+* Basic Use
+
+* Power-User Tips
+]
+
+---
+
+# Why references matter? &amp;#128218;
+&lt;br&gt;
+
+--
+
+.moderate[
+* Reader knows what is behind your .emph[argumentation]
+]
+--
+.moderate[
+* Gives reader a change to find .emph[more information]
+]
+
+--
+
+.moderate[
+* Indicates your .emph[knowledge] and .emph[expertise] on the subject
+]
+
+--
+
+.moderate[
+* Importance of .emph[consistency]: messy references 
+  
+  - ***confuse*** the reader 
+  - give ***bad impression*** about your professionalism
+  - ***undermine*** your research's credibility
+]
+
+---
+
+# Why reference management software? &amp;#128187;
+
+--
+
+.moderate[
+* Because typing references by hand is, for instance:
+  - ***time-consuming*** &amp;#8987;
+  - ***error-prone*** &amp;#10060;
+  - extremely ***boring*** &amp;#x1F971;
+]
+
+--
+
+#### Also:
+
+--
+
+.moderate[
+* Typing references by hand .emph[takes time from actually demanding things], like theoretical work and analyses
+]
+
+--
+
+.moderate[
+* .emph[Re-usability] and of manually typed references is next to nothing
+]
+
+--
+
+.moderate[
+* Let the computer do what it is good at (**automatized tasks**), so you can concentrate on what .emph[you are good at] (**critical thinking**) 
+]
+
+
+---
+
+layout: false
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Why Zotero?
+
+--
+
+.moderate[
+* .emph[FREE]!
+]
+
+--
+
+.moderate[
+* Open-source
+]
+
+--
+
+.moderate[
+* Fast
+]
+
+--
+
+.moderate[
+* Easy to use
+]
+
+--
+
+.moderate[
+* Makes your research more .emph[re-usable]
+]
+
+--
+
+.moderate[
+* Comprehensive [Citation Style Repository](https://www.zotero.org/styles)
+]
+
+--
+
+.moderate[
+* Visual [Citation Style Editor](https://editor.citationstyles.org/about/)
+]
+
+--
+
+.moderate[
+* [Bibliography Generator](https://zbib.org/)
+]
+
+--
+
+.moderate[
+* [RStudio integration](https://www.rstudio.com/blog/rstudio-1-4-preview-citations/) for R users
+]
+
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+
+# Installing Zotero
+
+.moderate[
+* Personal computer: download from Zotero's [website](https://www.zotero.org/)
+]
+
+.moderate[
+* NB! If you are using ***University of Helsinki's computer*** (i.e. library or work computers) &amp;#10145;&amp;#65039;  install from [Software Center](https://helpdesk.it.helsinki.fi/en/instructions/computer-and-printing/software/software-center)
+]
+
+.moderate[
+* Install also [Zotero Connector](https://www.zotero.org/download/connectors#)!
+]
+
+.moderate[
+* Create an [account in Zotero](https://www.zotero.org/user/register) &amp;#10145;&amp;#65039; enables syncing, group working &amp; file back-up 
+]
+
+
+.moderate[
+* Make sure the [MS Word plugin](https://www.zotero.org/support/word_processor_plugin_installation) is also installed &amp;#10145;&amp;#65039; you should be able to find "*Zotero*" tab in MS Word    
+]
+
+---
+
+# Check list before you start using Zotero &amp;#128221;
+&lt;br&gt;
+.big[
+- &amp;#9989; you have the Zotero **desktop app**
+
+
+- &amp;#9989; you can find **Zotero tab** in MS Word
+
+- &amp;#9989; you have registered **Zotero account**
+
+- &amp;#9989; you have **Zotero Connector** extension in your web browser
+
+]
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/1024px-WWW_logo_by_Robert_Cailliau.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+
+# Basic Use: in Web browser
+
+.moderate[
+* Search Bibliography from the Net
+
+* Good sources: [Google Scholar](https://scholar.google.com/), [WorldCat](https://www.worldcat.org/), [Amazon](https://www.amazon.com/), [Helka](https://helsinki.primo.exlibrisgroup.com/discovery/search?vid=358UOH_INST:VU1&amp;lang=en)...
+
+* For articles *po-russki*: [CyberLeninka](https://cyberleninka.ru/), see also this guide: Russian and Eastern European Studies &amp;#10145;&amp;#65039; [Primary Sources](https://libraryguides.helsinki.fi/russian_and_eastern_european_studies/primary_sources)
+
+* Click "Save to Zotero" on your browser extensions pane to save the reference
+]
+
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1024px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+# Basic Use: in MS Word
+.moderate[
+## Add Citations &amp;#128209;
+* Choose "**Zotero**" tab (next to "Home", "Insert", "Draw", etc.)
+  - &amp;#10145;&amp;#65039; Select "**Add/Edit Citation**"
+  - &amp;#10145;&amp;#65039; Select Citation Style and click "**OK**" (can be changed later at any point)
+	- &amp;#10145;&amp;#65039; Type the desired reference in the red Zotero box and press Enter
+	
+* You can also modify **page numbers**, hide the **author** or **add prefix/suffix** before adding the citation
+]
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1024px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+# Basic Use: in MS Word
+
+## Add Bibliography &amp;#128218;
+
+.modarate[
+* Choose "**Zotero**" tab (next to "Home", "Insert", "Draw", etc.)
+
+* Select "**Add/Edit Bibliography**"  &amp;#10145;&amp;#65039; adds list of references in the end of the document
+
+* **Tip** &amp;#128161; it's good practice to .emph[disable] automatic update of citations: 
+  - &amp;#10145;&amp;#65039; Click "**Document Preferences**" 
+  - &amp;#10145;&amp;#65039; Unselect "**Automatically update citations**" 
+  - &amp;#10145;&amp;#65039; Click "**OK**" 
+  - &amp;#10145;&amp;#65039; You can add citations manually by clicking the "Refresh" button! 
+]
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+## Basic Use: in Zotero
+
+## Edit Citations &amp;#128221;
+.moderate[
+- Edit imported citations: change title, author(s), page numbers, etc..
+
+- Create own citations: 
+  - &amp;#10145;&amp;#65039; Click "**New Item**" 
+  - &amp;#10145;&amp;#65039; Select citation type ("Book", "Book section", etc.)
+
+- You can also **change the order of authors**, mark some of them **as editors**, etc.
+]
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips &amp;#128170; in Zotero
+
+## Transliteration of references
+- &amp;#10145;&amp;#65039; Import desired reference to Zotero
+- &amp;#10145;&amp;#65039; Select imported reference in Zotero 
+- &amp;#10145;&amp;#65039; Right click with your mouse
+- &amp;#10145;&amp;#65039; Choose "**Duplicate Item**" 
+- &amp;#10145;&amp;#65039; Copy and paste reference's non-Latin fields one by one 
+- &amp;#10145;&amp;#65039; Go to transliteration [website](https://www.translitteration.com/transliteration/en/russian/ala-lc/)
+- &amp;#10145;&amp;#65039; Paste cyrillic text to the field
+- &amp;#10145;&amp;#65039; Click "To Latin script"
+- &amp;#10145;&amp;#65039; Copy and paste the transliterated version to your duplicated item in Zotero
+	
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1024px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+# Power-User Tips &amp;#128170; in MS Word 
+
+## Add keyboard shortcuts for Zotero
+- Add keyboard shortcut to .emph[frequently used Zotero commands]
+	- In Windows environment: check instructions from [MS support site](https://support.microsoft.com/en-us/office/customize-keyboard-shortcuts-9a92343e-a781-4d5a-92f1-0f32e3ba5b4d)
+	- In Mac environment:  
+		- &amp;#10145;&amp;#65039; **Tools**
+		- &amp;#10145;&amp;#65039; **Customise Keyboard...**
+		- &amp;#10145;&amp;#65039; From "**Categories**" select "**All Commands**" (might be also under "**Macros**") 
+		- &amp;#10145;&amp;#65039; Search for "**Zotero**" -&gt; 
+		- &amp;#10145;&amp;#65039; Select "**ZoteroInsertCitation**" and assign keyboard shortcut (for example: Command+E) -&gt; 
+		- &amp;#10145;&amp;#65039; Click "**OK**"
+- Other often used commands you may want to add: "**ZoteroAddEditCitation**", "**ZoteroRefresh**".. 
+		
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips 	&amp;#128170; - Citation Styles
+
+## Zotero Style Repository
+
+.moderate[
+* ~15 citation styles installed by default in Zotero
+
+* If you can't find the style you want, check Zotero's [style repository](https://www.zotero.org/styles) &amp;#10145;&amp;#65039; over 8100 readymade styles
+
+#### Downloading styles from style repository
+* Style Search &amp;#10145;&amp;#65039; Click on desired style &amp;#10145;&amp;#65039; "**Add citation style to Zotero**?" &amp;#10145;&amp;#65039; Select "**OK**" &amp;#10145;&amp;#65039; Change style in MS Word from Zotero tab &amp;#10145;&amp;#65039; Select "**Document Preferences**" &amp;#10145;&amp;#65039; Pick the style you want &amp;#10145;&amp;#65039; Click "**OK**"
+
+]
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips 	&amp;#128170; - Citation Styles
+
+### Question: "*What if I can't find a matching style?*"
+
+### Answer: Basically, you have three options:
+.big[
+1. **Edit** existing styles (**recommend*)
+
+2. **Correct manually**
+
+3. **Make your own style**
+]
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips 	&amp;#128170; - Citation Styles
+
+## Finding citation styles
+&lt;br&gt;
+.moderate[
+* Search for existing styles from Zotero's [style repository](https://www.zotero.org/styles) 
+
+* NB! Finding 100% correct citation style for your purposes might be hard
+
+* [Sebastian Karcher](https://www.sebastiankarcher.com/) provides an excellent [webinar presentation](https://www.youtube.com/watch?v=NDnf0o80dwg) on Citation Style Language (CSL) &amp;#10145;&amp;#65039;  also introduces how to search citation styles efficiently from the [CSL editor](https://editor.citationstyles.org/searchByExample/) (**recommend to check it out!*)
+
+]
+
+
+---
+
+background-image: url(https://www.zotero.org/support/_media/logo/zotero_256x256x32.png)
+background-size: 10%
+background-position: 95% 5%
+
+# Power-User Tips 	&amp;#128170; - Citation Styles
+
+## 1. Editing styles
+* Can't find your citation style? Edit existing style!
+
+* Search for existing styles from Zotero's [style repository](https://www.zotero.org/styles) 
+
+* **Generally speaking**: it's better idea to .emph[edit existing styles] &amp;#128073; making style from scratch is: 
+  1. time-consuming &amp;#8987;, and
+  2. probably requires coding knowledge ([XML](https://docs.citationstyles.org/en/stable/specification.html)) - which you may not have &amp;#129299;
+  
+* **In practice**, you can often find very closely matching style, which you need adjust only slightly (for example, author's first name needs to be fully shown instead of short version: "Doe, John" &amp;#9989;, "Doe, J." &amp;#10060;)
+
+* Sebastian Karcher's [webinar presentation]((https://www.youtube.com/watch?v=NDnf0o80dwg) offers a good starting point on editing citation styles 
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1024px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png)
+background-size: 15%
+background-position: 95% 5%
+
+# Power-User Tips 	&amp;#128170; - Citation Styles
+
+## 2. Correct manually
+
+* In this approach, you simply need to:
+  1. Find a closely matching existing citation style,
+  2. Use this citation style in your writing,
+  3. When you are ready with your text:
+    - &amp;#10145;&amp;#65039; Create a ***new*** empty Word document
+    - &amp;#10145;&amp;#65039; Copy and paste your ready text to this new document
+    - &amp;#10145;&amp;#65039; In your ***new Word document***: Select "**Zotero**" tab &amp;#10145;&amp;#65039; Click "**Unlink Citations**" &amp;#10145;&amp;#65039; Click "**OK**" 
+    
+* The ***new document*** is the your final output to be submitted (e.g. thesis, research article)
+
+* NB! &amp;#9888; Be careful not to unlink citations on your ***original Word document*** with Zotero references! &amp;#10145;&amp;#65039; you can't undo unlinking, and will lose the citations from your original document too
+
+
+---
+
+# Power-User Tips 	&amp;#128170; - Citation Styles
+
+## 3. Make your own citation style
+
+* "*For hardcore users*" -solution, when you can't find a matching citation style
+
+* My honest opinion: **generally speaking**, it's a better idea to .emph[edit existing styles] &amp;#128073; making style from scratch is: 
+  1. time-consuming &amp;#8987;, and
+  2. probably requires coding knowledge ([XML](https://docs.citationstyles.org/en/stable/specification.html)) - which you may not have &amp;#129299;
+
+* On the bright side, in this approach you learn coding skills, which you can later apply on other areas
+
+* Sebastian Karcher's [webinar presentation]((https://www.youtube.com/watch?v=NDnf0o80dwg) offers a good starting point on making your own CSL style
+
+
+---
+
+# Bonus Tip &amp;#128176; Extracting Zotero References
+
+.moderate[
+**Scenario 1**: You lost your Zotero/Mendeley library but still have your documents. Extraction allows you to recover the items you cited in your documents and import them back into your reference manager. Note that imported items won't be linked to the items in the document you extracted them from.
+
+**Scenario 2**: Somebody sent you a document and you would like to get the cited items into your own reference manager library.
+
+
+**Solution**: 
+
+* You may use the [Reference Extractor](https://rintze.zelle.me/ref-extractor/) tool, a free tool for extracting Zotero (and Mendeley) references from MS Word &amp;#10145;&amp;#65039; created by [Rintze M. Zelle](https://rintze.zelle.me/about/) (one of the developers of the Citation Style Language)
+
+]
+
+---
+
+
+
+background-image: url(avatar.jpeg)
+background-size: 25%
+background-position: 90% 70%
+
+# Questions? Comments? Feedback?
+
+## Contact/find me at
+
+&lt;br&gt;
+
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg> [https://eemilmitikka.netlify.app/](https://eemilmitikka.netlify.app/)
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg> [eemil.mitikka@helsinki.fi](mailto:eemil.mitikka@helsinki.fi)
+<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg> [Eemil Mitikka](https://www.youtube.com/channel/UC6f_SpVTiB7rZS0Knwb6aYg)
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg> [eemil-mitikka](https://www.linkedin.com/in/eemil-mitikka/)
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> [@eemilmitikka](https://twitter.com/eemilmitikka)
+<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> [@eemilmitikka](https://github.com/eemilmitikka)
+
+---
+
+class: middle, center
+
+# Thank you!
+
+.large[
+&amp;#128526;
+]
+
+&lt;style&gt;
+.large {
+font-size: 10em;
+}
+&lt;/style&gt;
+	
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
